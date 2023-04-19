@@ -1,0 +1,16 @@
+logging:
+  level: 
+    Root: info
+  file: /logs/application.log
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/employee
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+     
+server:
+  port: 9000
